@@ -1,0 +1,279 @@
+/* BEM Method Used */
+ /* Tools */
+
+ :root{
+    --heading_font: 'PT Sans', sans-serif;
+    --paragraph_font: 'Open sans', sans-serif;
+    --primary: #784D3C;
+    --white: #fff;
+    --gray: #e1e1e1;
+    --black: #000; 
+}
+ .text-centering {
+     text-align: center;
+ }
+
+@font-face {
+   font-family: Comfortaa-Light;
+   src: url(/css/Comfortaa/static/Comfortaa-Light.ttf);
+}
+@font-face {
+    font-family: Comfortaa-bold;
+    src: url(/css/Comfortaa/static/Comfortaa-Regular.ttf);
+}
+
+ /** Universals **/
+
+/* Border-box model */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Comfortaa-Light;
+ }
+ 
+ *, *:before, *:after {
+    box-sizing: inherit;
+ }
+
+ /* End */
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ .container {
+     width:80%;
+     margin-left:auto;
+     margin-right:auto;
+    background-color: #fff;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    }
+
+.nav {
+    padding-top: 4rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+ }
+
+ .nav a {
+     color: black;
+     font-size: 2rem;
+     font-family: Comfortaa-bold;
+    }
+
+ /* End tools */
+
+.resumen {
+    padding-top: 7rem;
+    font-size: 2rem;
+    text-align: justify; /* Justificar texto */
+    text-justify: inter-word; /* Justificar texto */
+}
+
+.portafolio {
+    font-family: Comfortaa-bold;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portafolio_carta {
+    padding: 2rem;
+    width: 18rem;
+    height: 25rem;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.certificados {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #fff;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    height:100%;
+    justify-content:center; 
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    font-family: Comfortaa-bold;
+}
+
+.estudios_certificados div a {
+
+    margin-bottom: 5rem;
+    
+}
+.certificados p {
+    width: 14.1rem;
+    text-align: center;
+}
+
+.fila_3 p {
+    width: 15.1rem;
+    text-align: center;
+}
+#portafolio {
+    font-size: 3rem;
+}
+
+#estudios_y_certificados {
+    padding-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.image-container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.image-container-contact img {
+    width: 5rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contact{
+    padding-bottom: 10rem;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+#contact {
+    padding-bottom: 4rem;
+    font-size: 3rem;  
+}
+@media (max-width: 768px) {
+
+    #logo {
+      width:7rem;
+    }
+    .container {
+        width: 80%;
+        padding: 0;
+    }
+    .nav {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        display:inline-block;
+        width:100%;
+     }
+
+     .nav img {
+         padding-bottom: 2rem;
+         display: block;
+         margin-left: auto; /* Centrar imagen */
+         margin-right: auto; /* Centrar imagen */
+         width: 50%; /* Centrar imagen */
+     }
+
+     .nav a {
+         color: black;
+         font-size: 3rem;
+         display:block;
+         font-family: Comfortaa-bold;
+         width: 100%;
+         text-align: center;
+         padding-top: 0.5rem;
+        }
+        
+    .mision {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mision img {
+        width:50%;
+        position:absolute;
+        justify-content:center;
+        opacity: 50%;
+        height:50%;
+    }
+    
+    .mision section {
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        font-size: 3rem;
+        padding: 10rem 3rem 10rem 3rem;
+    }
+
+    .mision section h2 {
+        font-family: Comfortaa-bold;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .mision section p {
+        font-family: Comfortaa-light;
+        text-align: justify; /* Justificar texto */
+        text-justify: inter-word; /* Justificar texto */
+        font-size: 2rem;
+    }
+
+    .portafolio {
+        font-family: Comfortaa-bold;
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .certificados{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .estudios_certificados{
+        height: 100%
+        
+    }
+
+    .estudios_certificados div a {
+        margin-bottom: 5rem;
+        
+    }
+    .image-container-contact {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+      }
+
+    .image-container-contact a {
+        padding-bottom: 2rem;
+      }
+      
+    .image-container-contact p {
+        padding-bottom: 2rem;
+      }
+ }
+
+ @media (max-width: 480px){
+
+
+
+  }
